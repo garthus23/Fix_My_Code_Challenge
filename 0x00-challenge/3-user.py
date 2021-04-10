@@ -12,7 +12,7 @@ class User():
     - id: public string unique (uuid)
     - password: private string hash in MD5
     """
-    
+
     __password = None
 
     def __init__(self):
@@ -76,7 +76,7 @@ if __name__ == '__main__':
     if user_2.password is not None:
         print("User.password should be None by default")
 
-    user_2.password = None 
+    user_2.password = None
     if user_2.password is not None:
         print("User.password should be None if setter to None")
 
